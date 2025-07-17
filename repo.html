@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>R.E.P.O - Gaming Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="repo.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <button class="home-btn" onclick="window.location.href='index.html'">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiByeD0iMTAiIGZpbGw9IiMwMGJjZDQiLz4KPHRleHQgeD0iNTAiIHk9IjM4IiBmb250LWZhbWlseT0iSW50ZXIsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NUk48L3RleHQ+Cjwvc3ZnPgo=" alt="MRN" />
+            </button>
+            <div class="nav-links">
+                <button class="nav-item" onclick="window.location.href='valorant.html'">VALORANT</button>
+                <button class="nav-item" onclick="window.location.href='honkaistarrail.html'">HONKAI STAR RAIL</button>
+                <button class="nav-item" onclick="window.location.href='wutheringwaves.html'">WUTHERING WAVES</button>
+                <button class="nav-item active" onclick="window.location.href='repo.html'">R.E.P.O</button>
+                <button class="nav-item" onclick="window.location.href='osu.html'">OSU</button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="repo-main">
+            <section class="top-section">
+                <div class="video-container">
+                    <video id="main-video" autoplay muted loop>
+                        <source src="img/vid/random ahh kena hentak kepala.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="circles-container">
+                    <div class="item-row">
+                        <div class="circle-placeholder">
+                            <img src="img/vid/gulagggg.mp4" alt="Item 1" />
+                        </div>
+                        <div class="item-text">
+                            <h3>These are my favourite moments</h3>
+                            <p>This moment got me hook for sure.</p>
+                        </div>
+                    </div>
+                    <div class="item-row">
+                        <div class="circle-placeholder">
+                            <img src="img/vid/hantu kepala.mp4" alt="Item 2" />
+                        </div>
+                        <div class="item-text">
+                            <h3>Funny Happy Times</h3>
+                            <p>Playing with friends is a must with this game.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="bottom-section">
+                <h2 class="section-title">MY <span class="highlight">TOP 3</span> FAVOURITE AGENTS</h2>
+                <div class="carousel-section">
+                    <button class="carousel-arrow left-arrow" id="prev-btn">&#9664;</button>
+                    <div class="carousel-container">
+                        <div class="carousel-item active" data-video="img/vid/random ahh kena hentak kepala.mp4">
+                            <img src="img/purple face.png" alt="Agent 1" />
+                        </div>
+                        <div class="carousel-item" data-video="img/vid/gulagggg.mp4">
+                            <img src="img/green face.png" alt="Agent 2" />
+                        </div>
+                        <div class="carousel-item" data-video="img/vid/hantu kepala.mp4">
+                            <img src="img/black face.jpeg" alt="Agent 3" />
+                        </div>
+                    </div>
+                    <button class="carousel-arrow right-arrow" id="next-btn">&#9654;</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="repo.js"></script>
+</body>
+</html>

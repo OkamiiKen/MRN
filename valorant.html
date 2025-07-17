@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valorant - Gaming Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="valorant.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <button class="home-btn" onclick="window.location.href='index.html'">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiByeD0iMTAiIGZpbGw9IiMwMGJjZDQiLz4KPHRleHQgeD0iNTAiIHk9IjM4IiBmb250LWZhbWlseT0iSW50ZXIsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NUk48L3RleHQ+Cjwvc3ZnPgo=" alt="MRN" />
+            </button>
+            <div class="nav-links">
+                <button class="nav-item active" onclick="window.location.href='valorant.html'">VALORANT</button>
+                <button class="nav-item" onclick="window.location.href='honkaistarrail.html'">HONKAI STAR RAIL</button>
+                <button class="nav-item" onclick="window.location.href='wutheringwaves.html'">WUTHERING WAVES</button>
+                <button class="nav-item" onclick="window.location.href='repo.html'">R.E.P.O</button>
+                <button class="nav-item" onclick="window.location.href='osu.html'">OSU</button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="valorant-main">
+            <!-- Large Placeholder at Top -->
+           <div class="top-placeholder">
+  <div class="slide-content active" data-slide="0">
+    <video autoplay muted loop playsinline>
+      <source src="img/vid/0717.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="slide-content" data-slide="1">
+    <video autoplay muted loop playsinline>
+      <source src="img/vid/chamber ace.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="slide-content" data-slide="2">
+    <video autoplay muted loop playsinline>
+      <source src="img/vid/random cypher cam.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Arrow Controls -->
+  <button class="arrow left-arrow">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+      <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  <button class="arrow right-arrow">
+    <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+      <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+
+  <!-- Dot Indicators -->
+  <div class="dot-indicators">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+</div>
+
+            <!-- Dynamic Text Content - Bottom Left -->
+            <div class="bottom-text">
+                <div class="text-slide active" data-slide="0">
+                    <p class="subtitle">CLUTCH FOR THE FIRST TIME</p>
+                    <h1 class="main-title">
+                        1v4 <span class="highlight">PEARL</span>
+                    </h1>
+                    <p class="description">
+                        Clutched the round like a king. Teamates died but I am here. The win got me addicted
+                    </p>
+                </div>
+                <div class="text-slide" data-slide="1">
+                    <p class="subtitle">ACE FOR ONCE</p>
+                    <h1 class="main-title">
+                        FIRST TIME <span class="highlight">ACE</span>
+                    </h1>
+                    <p class="description">
+                        I got them early with the bold peeks. Then i relied on my strong point which is angle holding and Boom ACE!
+                    </p>
+                </div>
+                <div class="text-slide" data-slide="2">
+                    <p class="subtitle">WHAT JUST HAPPENED?</p>
+                    <h1 class="main-title">
+                        CYPHER CAM <span class="highlight">GONE WRONG</span>
+                    </h1>
+                    <p class="description">
+                        Successfully retook B site on Bind against 4 defenders. Used Sage walls and slows to control the retake.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="valorant.js"></script>
+</body>
+</html>

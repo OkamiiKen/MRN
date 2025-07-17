@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wuthering Waves - Gaming Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="wutheringwaves.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <button class="home-btn" onclick="window.location.href='index.html'">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiByeD0iMTAiIGZpbGw9IiMwMGJjZDQiLz4KPHRleHQgeD0iNTAiIHk9IjM4IiBmb250LWZhbWlseT0iSW50ZXIsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NUk48L3RleHQ+Cjwvc3ZnPgo=" alt="MRN" />
+            </button>
+            <div class="nav-links">
+                <button class="nav-item" onclick="window.location.href='valorant.html'">VALORANT</button>
+                <button class="nav-item" onclick="window.location.href='honkaistarrail.html'">HONKAI STAR RAIL</button>
+                <button class="nav-item active" onclick="window.location.href='wutheringwaves.html'">WUTHERING WAVES</button>
+                <button class="nav-item" onclick="window.location.href='repo.html'">R.E.P.O</button>
+                <button class="nav-item" onclick="window.location.href='osu.html'">OSU</button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="wuthering-main">
+            <!-- Video Background Slider -->
+            <div class="video-slider">
+                <div class="video-slide active" data-slide="0">
+                    <video autoplay muted loop>
+                        <source src="img/vid/rover.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-slide" data-slide="1">
+                    <video autoplay muted loop>
+                        <source src="img/vid/jiyan.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-slide" data-slide="2">
+                    <video autoplay muted loop>
+                        <source src="img/vid/phoebe.mp4" type="video/mp4">
+                    </video>
+                </div>
+                <div class="video-slide" data-slide="3">
+                    <video autoplay muted loop>
+                        <source src="img/vid/calcharo.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- Character Gallery - Splide Slider -->
+            <div class="splide" role="group" aria-label="Character Gallery" style="position: fixed; bottom: 1rem; left: 50%; transform: translateX(-50%); z-index: 9999; width: 90%; max-width: 800px;">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <div class="character-card" data-slide="0">
+                                <div class="character-preview">
+                                    <img src="https://via.placeholder.com/200x300/00D4AA/FFFFFF?text=ROVER" alt="Rover" />
+                                    <div class="character-element spectro">SPECTRO</div>
+                                </div>
+                                <div class="character-name">ROVER</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="character-card" data-slide="1">
+                                <div class="character-preview">
+                                    <img src="https://via.placeholder.com/200x300/FF6B6B/FFFFFF?text=JIYAN" alt="Jiyan" />
+                                    <div class="character-element aero">AERO</div>
+                                </div>
+                                <div class="character-name">JIYAN</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="character-card" data-slide="2">
+                                <div class="character-preview">
+                                    <img src="https://via.placeholder.com/200x300/4ECDC4/FFFFFF?text=YINLIN" alt="Yinlin" />
+                                    <div class="character-element electro">SPECTRO</div>
+                                </div>
+                                <div class="character-name">ZANI</div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <div class="character-card" data-slide="3">
+                                <div class="character-preview">
+                                    <img src="https://via.placeholder.com/200x300/FFD93D/000000?text=CALCHARO" alt="Calcharo" />
+                                    <div class="character-element electro">ELECTRO</div>
+                                </div>
+                                <div class="character-name">CALCHARO</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Character Info - Top Left -->
+            <div class="character-info">
+                <div class="info-slide active" data-slide="0">
+                    <div class="character-title">
+                        <h1>ROVER</h1>
+                        <div class="element-badge spectro">SPECTRO</div>
+                    </div>
+                    <div class="character-role">RESONATOR • MAIN DPS</div>
+                    <div class="character-description">
+                        The mysterious Rover who awakened in this world. Wields the power of Spectro and can resonate with multiple elements.
+                    </div>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">WEAPON</span>
+                            <span class="stat-value">SWORD</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">RARITY</span>
+                            <span class="stat-value">5★</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-slide" data-slide="1">
+                    <div class="character-title">
+                        <h1>JIYAN</h1>
+                        <div class="element-badge aero">AERO</div>
+                    </div>
+                    <div class="character-role">GENERAL • MAIN DPS</div>
+                    <div class="character-description">
+                        The Midnight Rangers' General. A master of Aero abilities who commands the wind with his spear techniques.
+                    </div>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">WEAPON</span>
+                            <span class="stat-value">BROADBLADE</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">RARITY</span>
+                            <span class="stat-value">5★</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-slide" data-slide="2">
+                    <div class="character-title">
+                        <h1>ZANI</h1>
+                        <div class="element-badge electro">SPECTRO</div>
+                    </div>
+                    <div class="character-role">PATROLLER • SUB DPS</div>
+                    <div class="character-description">
+                        Your typical sleeper but also very powerful in battle.Having an ultimate which enhances her abilities.
+                    </div>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">WEAPON</span>
+                            <span class="stat-value">GAUNTLETS</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">RARITY</span>
+                            <span class="stat-value">5★</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-slide" data-slide="3">
+                    <div class="character-title">
+                        <h1>CALCHARO</h1>
+                        <div class="element-badge electro">ELECTRO</div>
+                    </div>
+                    <div class="character-role">GHOST HOUNDS • MAIN DPS</div>
+                    <div class="character-description">
+                        Leader of the Ghost Hounds mercenary group. A fierce warrior who wields Electro power with deadly precision.
+                    </div>
+                    <div class="character-stats">
+                        <div class="stat">
+                            <span class="stat-label">WEAPON</span>
+                            <span class="stat-value">BROADBLADE</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">RARITY</span>
+                            <span class="stat-value">5★</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Resonance Effects -->
+            <div class="resonance-effects">
+                <div class="resonance-particle" style="--delay: 0s;"></div>
+                <div class="resonance-particle" style="--delay: 1s;"></div>
+                <div class="resonance-particle" style="--delay: 2s;"></div>
+                <div class="resonance-particle" style="--delay: 3s;"></div>
+                <div class="resonance-particle" style="--delay: 4s;"></div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+    <script src="wutheringwaves.js"></script>
+</body>
+</html>

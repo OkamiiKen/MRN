@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honkai Star Rail - Gaming Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="honkaistarrail.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <button class="home-btn" onclick="window.location.href='index.html'">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiByeD0iMTAiIGZpbGw9IiMwMGJjZDQiLz4KPHRleHQgeD0iNTAiIHk9IjM4IiBmb250LWZhbWlseT0iSW50ZXIsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NUk48L3RleHQ+Cjwvc3ZnPgo=" alt="MRN" />
+            </button>
+            <div class="nav-links">
+                <button class="nav-item" onclick="window.location.href='valorant.html'">VALORANT</button>
+                <button class="nav-item active" onclick="window.location.href='honkaistarrail.html'">HONKAI STAR RAIL</button>
+                <button class="nav-item" onclick="window.location.href='wutheringwaves.html'">WUTHERING WAVES</button>
+                <button class="nav-item" onclick="window.location.href='repo.html'">R.E.P.O</button>
+                <button class="nav-item" onclick="window.location.href='osu.html'">OSU</button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="honkai-main">
+            <!-- Video Background Slider -->
+            <div class="video-slider">
+    <div class="video-slide active" data-slide="0">
+        <video autoplay muted loop>
+            <source src="img/vid/saber.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-slide" data-slide="1">
+        <video autoplay muted loop>
+            <source src="img/vid/archer.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-slide" data-slide="2">
+        <video autoplay muted loop>
+            <source src="img/vid/castorice.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-slide" data-slide="3">
+        <video autoplay muted loop>
+            <source src="img/vid/TB.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="video-slide" data-slide="4">
+        <video autoplay muted loop>
+            <source src="img/vid/seele.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+            <!-- Character Image Overlay -->
+            <div class="character-overlay">
+                <!-- Character Images that sync with videos -->
+                <div class="character-slide active" data-slide="0">
+                    <div class="character-image">
+                        <img src="img/saber eid.webp" alt="Saber" />
+                        <div class="character-glow"></div>
+                    </div>
+                </div>
+                <div class="character-slide" data-slide="1">
+                    <div class="character-image">
+                        <img src="img/archer eid.webp" alt="Archer" />
+                        <div class="character-glow"></div>
+                    </div>
+                </div>
+                <div class="character-slide" data-slide="2">
+                    <div class="character-image">
+                        <img src="img/castorice eid.webp" alt="Castorice" />
+                        <div class="character-glow"></div>
+                    </div>
+                </div>
+                <div class="character-slide" data-slide="3">
+                    <div class="character-image">
+                        <img src="img/tb eid.webp" alt="Jingliu" />
+                        <div class="character-glow"></div>
+                    </div>
+                </div>
+                <div class="character-slide" data-slide="4">
+                    <div class="character-image">
+                        <img src="img/seele eid.webp" alt="Blade" />
+                        <div class="character-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Arrow Controls -->
+                <button class="arrow left-arrow">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                        <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <button class="arrow right-arrow">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
+                        <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+
+                <!-- Dot Indicators -->
+                <div class="dot-indicators">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+
+            <!-- Dynamic Text Content - Bottom Left -->
+            <div class="bottom-text">
+                <div class="text-slide active" data-slide="0">
+                    <p class="subtitle">SABER</p>
+                    <h1 class="main-title">
+                        HOLY <span class="highlight">SWORD</span>
+                    </h1>
+                    <p class="description">
+                        The legendary King of Knights wielding Excalibur. Her noble phantasm can obliterate any enemy with divine light.
+                    </p>
+                </div>
+                <div class="text-slide" data-slide="1">
+                    <p class="subtitle">ARCHER</p>
+                    <h1 class="main-title">
+                        UNLIMITED <span class="highlight">BLADE WORKS</span>
+                    </h1>
+                    <p class="description">
+                        The heroic spirit who projects infinite swords. His reality marble contains countless noble phantasms.
+                    </p>
+                </div>
+                <div class="text-slide" data-slide="2">
+                    <p class="subtitle">CASTORICE</p>
+                    <h1 class="main-title">
+                        ICE <span class="highlight">PRINCESS</span>
+                    </h1>
+                    <p class="description">
+                        The elegant ice wielder with unmatched grace. Her frozen domain can stop time itself.
+                    </p>
+                </div>
+                <div class="text-slide" data-slide="3">
+                    <p class="subtitle">JINGLIU</p>
+                    <h1 class="main-title">
+                        SWORD <span class="highlight">CHAMPION</span>
+                    </h1>
+                    <p class="description">
+                        The legendary swordmaster who transcended mortality. Her blade cuts through dimensions.
+                    </p>
+                </div>
+                <div class="text-slide" data-slide="4">
+                    <p class="subtitle">BLADE</p>
+                    <h1 class="main-title">
+                        STELLARON <span class="highlight">HUNTER</span>
+                    </h1>
+                    <p class="description">
+                        The immortal warrior seeking death. His cursed blade grows stronger with each battle.
+                    </p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="honkaistarrail.js"></script>
+</body>
+</html>

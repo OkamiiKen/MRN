@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <nav class="navbar">
+            <!-- MRN Logo Button -->
+            <button class="home-btn" onclick="goHome()">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiB2aWV3Qm94PSIwIDAgMTAwIDYwIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iMTAwIiBoZWlnaHQ9IjYwIiByeD0iMTAiIGZpbGw9IiMwMGJjZDQiLz4KPHRleHQgeD0iNTAiIHk9IjM4IiBmb250LWZhbWlseT0iSW50ZXIsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMjQiIGZvbnQtd2VpZ2h0PSI4MDAiIGZpbGw9IndoaXRlIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIj5NUk48L3RleHQ+Cjwvc3ZnPgo=" alt="MRN" />
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="nav-links">
+                <button class="nav-item" onclick="window.location.href='valorant.html'">VALORANT</button>
+                <button class="nav-item" onclick="window.location.href='honkaistarrail.html'">HONKAI STAR RAIL</button>
+                <button class="nav-item" onclick="window.location.href='wutheringwaves.html'">WUTHERING WAVES</button>
+                <button class="nav-item" onclick="window.location.href='repo.html'">R.E.P.O</button> 
+                <button class="nav-item" onclick="window.location.href='osu.html'">OSU</button>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Left Content - Bottom Left -->
+            <div class="left-content">
+                <p class="subtitle">What are my hobbies and more importantly</p>
+                <h1 class="main-title">
+                    WHO AM <span class="highlight">I</span>?
+                </h1>
+                <p class="description">
+                    I'm just your average gamer and as the name suggest gaming is my favourite hobby and pastime events. Having said that, here are some of the games that I've frequent these last couple of months!
+                </p>
+                <button class="lets-play-btn" onclick="letsPlay()">
+                    LET'S PLAY!
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
